@@ -33,7 +33,7 @@ git clone https://github.com/CarmineD8/robot_urdf.git
 ros2 launch robot_urdf gazebo.launch.py
 ```
 
-### 2. Open a new terminal and run this command:
+### 5. Launch the code
 
 ```bash
 ros2 run assignment2_rt_part2 robot_movement
