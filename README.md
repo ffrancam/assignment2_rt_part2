@@ -4,7 +4,17 @@
 This package implements a simple ROS 2 node to control the robot’s movement based on its odometry.
 
 ## **Getting Started**
-### 0. Clone the repository
+### 1. Install ROS2
+In order to run the project, ROS2 must be installed.
+It is also needed to run this commands:
+
+```bash
+apt-get update
+apt-get upgrade (it may take a while!)
+apt-get install ros-foxy-xacro ros-foxy-joint-state-publisher ros-foxy-gazebo*
+```
+
+### 2. Clone the repository
 
 Navigate to your workspace and clone the repository into the `src` folder:
 
@@ -12,15 +22,21 @@ Navigate to your workspace and clone the repository into the `src` folder:
 git clone <URL_of_this_repository>
 ```
 
-### 1. Open a terminal and run this command:
+### 3. Clone the gazebo simulation
+```bash
+git clone https://github.com/CarmineD8/robot_urdf.git
+```
+
+### 4. Run the gazebo simulation:
 
 ```bash
 ros2 launch robot_urdf gazebo.launch.py
 ```
+
 ### 2. Open a new terminal and run this command:
 
 ```bash
-ros2 run my_ros2_pkg move_robot
+ros2 run assignment2_rt_part2 robot_movement
 ```
 
 ## How it works
