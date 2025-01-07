@@ -1,5 +1,31 @@
+# Assignment 2.2 - Robot simulation
+
+## **Overview**
+This package implements a simple ROS 2 node to control the robot’s movement based on its odometry.
+
+## **Getting Started**
+### 0. Clone the repository
+
+Navigate to your workspace and clone the repository into the `src` folder:
+
+```bash
+git clone <URL_of_this_repository>
+```
+
+### 1. Open a terminal and run this command:
+
+```bash
+ros2 launch robot_urdf gazebo.launch.py
+```
+### 2. Open a new terminal and run this command:
+
+```bash
+ros2 run my_ros2_pkg move_robot
+```
+
+## How it works
 ### • robot_movement.cpp
-This script implements a simple ROS 2 node to control the robot’s movement based on its odometry. Its main features are:
+Its main features are:
 
 #### - Odometry Subscription
 The node subscribes to the `/odom` topic to receive the robot's position data (x, y).
