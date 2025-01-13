@@ -20,12 +20,13 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
-find_package(nav_msgs REQUIRED) 
+find_package(nav_msgs REQUIRED)
+find_package(std_srvs REQUIRED)
 
 add_executable(robot_movement src/robot_movement.cpp)
 
 #target_link_libraries(robot_movement rclcpp geometry_msgs)
-ament_target_dependencies(robot_movement rclcpp nav_msgs geometry_msgs)
+ament_target_dependencies(robot_movement rclcpp nav_msgs geometry_msgs std_srvs)
 
 install(TARGETS
 	robot_movement
